@@ -1,6 +1,10 @@
 import streamlit as st
 import random
 from applications import temperature_of_city, get_news, news_summarizer, smart_plan
+from hide_ui import hide_streamlit_ui
+
+hide_streamlit_ui()
+
 
 st.markdown("""
 <style>
@@ -174,4 +178,5 @@ elif page_option == "News by Interest":
     interest_news_page()
 elif page_option == "Smart Planner":
     smart_planner()
+
 
