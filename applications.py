@@ -4,6 +4,11 @@ from google import genai
 from google.genai import types
 import requests
 import datetime
+import streamlit as st
+from hide_ui import hide_streamlit_ui
+
+hide_streamlit_ui()
+
 
 
 load_dotenv()
@@ -282,3 +287,4 @@ print(abc)
 # # test
 # abc = get_news("tech")
 # print(abc)
+
