@@ -2,6 +2,14 @@ import streamlit as st
 import random
 from applications import temperature_of_city, get_news, news_summarizer, smart_plan
 
+st.markdown("""
+<style>
+footer {visibility: hidden;}
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 # --- Page Configuration ---
 
 
@@ -166,3 +174,4 @@ elif page_option == "News by Interest":
     interest_news_page()
 elif page_option == "Smart Planner":
     smart_planner()
+
